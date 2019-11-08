@@ -51,8 +51,9 @@ public class OfficeManager extends Warehouse {
             BikePart currentPart = bikeParts.get(i);
 
             if(currentPart.getQuantity() <= currentPart.getMinimumQuantity()){
-                System.out.println("The quantity is getting low for this part, please order more.");
+                System.out.println("The quantity is getting low for this part: " + currentPart.getPartName() + " " + "The current quantity is: " + currentPart.getQuantity() + " " + "The minimum quantity is: " + currentPart.getMinimumQuantity());
             }
+
         }
     }
 
@@ -60,3 +61,7 @@ public class OfficeManager extends Warehouse {
         //parameters sales associate, start date, end date
     }
 }
+
+
+//add order part to main menu, this will be the same as the enter a part except you need to be able to order multiple parts at a time
+//enter the number of parts you wish to order, enter the part

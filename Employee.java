@@ -8,9 +8,8 @@ public class Employee {
     private String passWord;
     private String phoneNumber;
     private String jobTitle;
-    private String salesVan;
 
-    public Employee(String firstName, String lastName, String email, String userName, String passWord, String phoneNumber, String jobTitle, String salesVan){
+    public Employee(String firstName, String lastName, String email, String userName, String passWord, String phoneNumber, String jobTitle){
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -18,7 +17,7 @@ public class Employee {
         this.passWord = passWord;
         this.phoneNumber = phoneNumber;
         this.jobTitle = jobTitle;
-        this.salesVan = salesVan;
+
 
     }
 
@@ -49,13 +48,7 @@ public class Employee {
     public void setJobTitle(String jobTitle) {
         this.jobTitle = jobTitle;
     }
-    public void setSalesVan(String salesVan){
-        this.salesVan = salesVan;
-    }
 
-    public String getSalesVan() {
-        return salesVan;
-    }
 
     public String getFirstName() {
         return firstName;
@@ -105,7 +98,7 @@ public class Employee {
     public String Serialize() {
         String serializedEmployee = (this.firstName + "," + (this.lastName)
                 + "," + (this.email) + "," + (this.userName)
-                + "," + (this.passWord) + "," + (this.phoneNumber) + "," + (this.jobTitle) + ("\n"));
+                + "," + (this.passWord) + "," + (this.phoneNumber) + "," + (this.jobTitle)  + ("\n"));
         return serializedEmployee;
     }
 

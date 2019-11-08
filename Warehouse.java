@@ -87,7 +87,7 @@ public class Warehouse {
                 int sellQuantity = partQuantity.nextInt();
                 currentPart.setQuantity(currentPart.getQuantity() - sellQuantity);
                 if (currentPart.getOnSale()) {
-                    System.out.println("You're in luck! This item is on sale! \n PartName: "
+                    System.out.println("You're in luck! This item is on sale!\nPartName: "
                             + currentPart.getPartName() + "  Sale Price: " + currentPart.getSalePrice()
                             + "  Sale Date and Time: " + now);
                 } else {
