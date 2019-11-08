@@ -8,8 +8,9 @@ public class Employee {
     private String passWord;
     private String phoneNumber;
     private String jobTitle;
+    private String salesVan;
 
-    public Employee(String firstName, String lastName, String email, String userName, String passWord, String phoneNumber, String jobTitle){
+    public Employee(String firstName, String lastName, String email, String userName, String passWord, String phoneNumber, String jobTitle, String salesVan){
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -17,6 +18,7 @@ public class Employee {
         this.passWord = passWord;
         this.phoneNumber = phoneNumber;
         this.jobTitle = jobTitle;
+        this.salesVan = salesVan;
 
     }
 
@@ -46,6 +48,13 @@ public class Employee {
 
     public void setJobTitle(String jobTitle) {
         this.jobTitle = jobTitle;
+    }
+    public void setSalesVan(String salesVan){
+        this.salesVan = salesVan;
+    }
+
+    public String getSalesVan() {
+        return salesVan;
     }
 
     public String getFirstName() {
@@ -87,6 +96,7 @@ public class Employee {
         this.passWord = values[4];
         this.phoneNumber = values[5];
         this.jobTitle = values[6];
+
 
     }
 

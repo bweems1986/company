@@ -43,6 +43,7 @@ public class SystemAdministrator  {
         String passWord = "";
         String phoneNumber = "";
         String jobTitle = "";
+        String salesVan = "";
 
         try {
             System.out.print("Please enter a first name: ");
@@ -59,7 +60,11 @@ public class SystemAdministrator  {
             phoneNumber = userInput.next();
             System.out.print("Please enter a job title: ");
             jobTitle = userInput.next();
-            return new Employee(firstName, lastName, email, userName, passWord, phoneNumber, jobTitle);//create account object
+            if(jobTitle.equals("salesassociate")){
+                System.out.println("Please enter a sales van: ");
+                salesVan = userInput.next();
+            }
+            return new Employee(firstName, lastName, email, userName, passWord, phoneNumber, jobTitle,salesVan);//create account object
 
         } catch (InputMismatchException e) {
             throw e;
@@ -140,3 +145,4 @@ public class SystemAdministrator  {
         }
     }
 }
+//this is a git check
